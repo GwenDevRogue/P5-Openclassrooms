@@ -16,9 +16,10 @@ function displayData(data){
       <p class="productDescription">${element.description}</p>      </article>
     `
     itemsHtml.appendChild(productHtml);
-    console.log();
+
   });
 }
+
 
 function fetchData() {
   fetch("http://localhost:3000/api/products")
@@ -37,11 +38,3 @@ function fetchData() {
   }
 
 main();
-
-
-
-
-  
-  //fetch("http://localhost:3000/api/products")
-    //.then(r => r.json())
-   // .then(body => console.log(body))
