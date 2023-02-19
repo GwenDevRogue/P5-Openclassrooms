@@ -82,7 +82,7 @@ function addToCart (){
     let itemInCart = false 
 
     cart.forEach((itemFromCart)=>{
-      if (id === itemFromCart.id, color === itemFromCart.color){
+      if (id === itemFromCart.id && color === itemFromCart.color){
        itemFromCart.quantity += parseInt(quantity);
        itemInCart = true;
        console.log('item in panier')
@@ -97,19 +97,6 @@ function addToCart (){
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
-  // vérifier qu'une quantité et une couleur soient sélectionnés avant
-  // de continuer le reste du processus
-
-
-  // créer le panier ou récupérer celui existant
-  // le panier est un tableau
-  // si le localsorage existe, le tableau prend la valeur du localstorage
-  
-  // si l'id et la couleur sont déja présente dans le tableau
-  // alors on upgrade la quantité
-  // sinon rajoute l'objet créé dans le tableau
-  
-  // sauvegarder le localstorage
 }
 
 main();

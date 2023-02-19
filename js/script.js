@@ -9,7 +9,7 @@ function displayData(data){
   data.forEach(element => {
     let productHtml = document.createElement('a');
     productHtml.href = "./product.html?id=" + element._id;
-    productHtml.innerHTML = `
+    productHtml.innerHTML =`
     <article>
       <img src=${element.imageUrl} alt=${element.altTxt}>
       <h3 class="productName">${element.name}</h3>
